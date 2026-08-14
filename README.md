@@ -3,55 +3,25 @@
 Next.js 15 frontend for the AI Fashion Design Platform. Connects to the FastAPI backend via REST API.
 
 ## 📁 Folder Structure
-fashion-frontend/
-├── .env.local.example
-├── next.config.js
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-├── tsconfig.json
-├── middleware.ts
+
+fashion-backend/
+├── .env.example
+├── Dockerfile
+├── requirements.txt
 ├── README.md
-└── src/
-    ├── app/
-    │   ├── api/
-    │   │   └── auth/
-    │   │       └── session/
-    │   │           └── route.ts
-    │   ├── dashboard/
-    │   │   └── page.tsx
-    │   ├── studio/
-    │   │   └── [id]/
-    │   │       └── page.tsx
-    │   ├── globals.css
-    │   ├── layout.tsx
-    │   └── page.tsx
-    ├── components/
-    │   ├── auth/
-    │   │   ├── FirebaseAuthProvider.tsx
-    │   │   └── LoginForm.tsx
-    │   ├── canvas/
-    │   │   ├── InfiniteCanvas.tsx
-    │   │   ├── LayerPanel.tsx
-    │   │   └── Toolbar.tsx
-    │   ├── chat/
-    │   │   └── AIChatSidebar.tsx
-    │   └── ui/
-    │       ├── button.tsx
-    │       ├── card.tsx
-    │       ├── dialog.tsx
-    │       └── input.tsx
-    ├── lib/
-    │   ├── api/
-    │   │   └── client.ts
-    │   ├── firebase/
-    │   │   ├── admin.ts
-    │   │   └── client.ts
-    │   └── store/
-    │       └── canvasStore.ts
-    └── public/
-        └── videos/
-            └── preview.mp4
+├── main.py
+├── database.py
+├── models.py
+├── schemas.py
+├── dependencies.py
+├── routers/
+│ ├── auth.py
+│ ├── projects.py
+│ ├── chat.py
+│ └── generate.py
+└── services/
+├── llm_service.py
+└── image_service.py
 
 
 ## 🚀 How to Run
