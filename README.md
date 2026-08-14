@@ -4,29 +4,30 @@ Next.js 15 frontend for the AI Fashion Design Platform. Connects to the FastAPI 
 
 ## 📁 Folder Structure
 
+```
 fashion-frontend/
-├── .env.local.example # Environment variables template
-├── middleware.ts # Route protection with session cookies
+├── .env.local.example          # Environment variables template
+├── middleware.ts                # Route protection with session cookies
 ├── src/
-│ ├── app/
-│ │ ├── api/auth/session/ # Firebase session cookie endpoint
-│ │ ├── dashboard/ # Project gallery (protected)
-│ │ ├── studio/[id]/ # Canvas editor (protected)
-│ │ ├── globals.css # Tailwind + checkerboard pattern
-│ │ ├── layout.tsx # Root layout with Firebase provider
-│ │ └── page.tsx # Landing page with preview video
-│ ├── components/
-│ │ ├── auth/ # Firebase login forms & provider
-│ │ ├── canvas/ # InfiniteCanvas, LayerPanel, Toolbar
-│ │ ├── chat/ # AI Chat sidebar
-│ │ └── ui/ # Shadcn/ui primitives
-│ ├── lib/
-│ │ ├── api/client.ts # FastAPI HTTP client with auth
-│ │ ├── firebase/ # Firebase client & admin SDK
-│ │ └── store/canvasStore.ts # Zustand state with undo/redo
-│ └── public/videos/ # Preview video (10-18s demo)
+│   ├── app/
+│   │   ├── api/auth/session/    # Firebase session cookie endpoint
+│   │   ├── dashboard/           # Project gallery (protected)
+│   │   ├── studio/[id]/         # Canvas editor (protected)
+│   │   ├── globals.css          # Tailwind + checkerboard pattern
+│   │   ├── layout.tsx           # Root layout with Firebase provider
+│   │   └── page.tsx             # Landing page with preview video
+│   ├── components/
+│   │   ├── auth/                # Firebase login forms & provider
+│   │   ├── canvas/              # InfiniteCanvas, LayerPanel, Toolbar
+│   │   ├── chat/                # AI Chat sidebar
+│   │   └── ui/                  # Shadcn/ui primitives
+│   ├── lib/
+│   │   ├── api/client.ts        # FastAPI HTTP client with auth
+│   │   ├── firebase/            # Firebase client & admin SDK
+│   │   └── store/canvasStore.ts # Zustand state with undo/redo
+│   └── public/videos/           # Preview video (10-18s demo)
 └── README.md
-
+```
 
 ## 🚀 How to Run
 
