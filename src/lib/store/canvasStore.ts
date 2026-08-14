@@ -17,7 +17,7 @@ interface CanvasState {
   historyIndex: number;
   
   // Actions
-  addLayer: (layer: Omit<Layer, 'id'>) => void;
+  addLayer: (layer: Omit<Layer, 'id' | 'zIndex'>) => void;  // ← FIXED: zIndex is auto-generated
   updateLayer: (id: string, data: any) => void;
   removeLayer: (id: string) => void;
   duplicateLayer: (id: string) => void;

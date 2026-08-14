@@ -2,8 +2,9 @@ import { LoginForm } from '@/components/auth/LoginForm';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
-export default function Home() {
-  if (cookies().get('__session')) {
+export default async function Home() {
+  const cookieStore = await cookies();
+  if (cookieStore.get('__session')) {
     redirect('/dashboard');
   }
 
