@@ -1,3 +1,4 @@
 node_modules/*
 .env
 src/public/videos/preview.mp4
+.next/*
